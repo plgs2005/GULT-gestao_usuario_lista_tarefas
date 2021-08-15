@@ -1,19 +1,28 @@
 <?php
 
+use App\Models\TasksList;
+use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\Framework\Constraint\SameSize;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+
+Route::post('auth', 'App\Http\Controllers\Api\v1\AuthController@authenticate');
+Route::post('auth-refresh', 'App\Http\Controllers\Api\v1\AuthController@refreshToken');
+Route::get('user', 'App\Http\Controllers\Api\v1\AuthController@getAuthenticatedUser');
+
+
+
+Route::group([
+    'prefix' => 'v1',
+    'namespace' => 'App\Http\Controllers\Api\v1',
+    'middleware'=>'auth:api'
+  
+  ], function () {
+  
+    Route::get('status/{id}/tasks', 'StatusController@tasks');
+    Route::apiResource('status', 'StatusController');
+    Route::apiResource('tasks', 'TasksListController');
+  });

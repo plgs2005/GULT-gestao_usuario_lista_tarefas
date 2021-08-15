@@ -51,13 +51,16 @@ class RouteServiceProvider extends ServiceProvider
 
     /**
      * Configure the rate limiters for the application.
+     * aqui podemos definir um limite de requisições por minuto o
+     * padrão é 60 setei com 5 requisições por minuto apenas
+     * para mostrar mais essa configuração de Segurança do Laravel
      *
      * @return void
      */
     protected function configureRateLimiting()
     {
         RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by(optional($request->user())->id ?: $request->ip());
+            return Limit::perMinute(5)->by(optional($request->user())->id ?: $request->ip());
         });
     }
 }
