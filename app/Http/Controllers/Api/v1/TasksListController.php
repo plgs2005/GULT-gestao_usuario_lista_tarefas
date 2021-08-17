@@ -18,6 +18,9 @@ class TasksListController extends Controller
     public function __construct(TasksList $list)
     {
         $this->list = $list;
+        $this->middleware('auth:api')->except([
+            'index', 'show'
+        ]);
     }
 
     public function sendemail($id)

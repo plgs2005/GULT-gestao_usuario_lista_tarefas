@@ -18,7 +18,7 @@ Route::get('user', 'App\Http\Controllers\Api\v1\AuthController@getAuthenticatedU
 Route::group([
     'prefix' => 'v1',
     'namespace' => 'App\Http\Controllers\Api\v1',
-    'middleware'=>'auth:api'
+  'middleware'=>'auth:api' 
   
   ], function () {
   

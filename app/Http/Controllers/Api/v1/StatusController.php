@@ -20,6 +20,10 @@ class StatusController extends Controller
     public function __construct(TasksStatus $status)
     {
         $this->status = $status;
+
+        $this->middleware('auth:api')->except([
+            'index', 'show'
+        ]);
     }
 
     public function sendemail($id)
