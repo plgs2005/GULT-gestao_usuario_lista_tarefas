@@ -25,4 +25,5 @@ Route::group([
     Route::get('status/{id}/tasks', 'StatusController@tasks');
     Route::apiResource('status', 'StatusController');
     Route::apiResource('tasks', 'TasksListController');
+    Route::apiResource('users', 'UserController');
   });
