@@ -83,10 +83,10 @@ API com autenticação:
 ## Endpoint's
 #Route::post('auth', 'App\Http\Controllers\Api\v1\AuthController@authenticate');
 #Route::post('auth-refresh', 'App\Http\Controllers\Api\v1\AuthController@refreshToken');
-# Route::get('user', 'App\Http\Controllers\Api\v1\AuthController@getAuthenticatedUser');
+#Route::get('user', 'App\Http\Controllers\Api\v1\AuthController@getAuthenticatedUser');
 
 #get('status/{id}/tasks', 'StatusController@tasks');
-#apiResource('status', 'StatusController');
+#apiResource('status', 'StatusController'); 
 #apiResource('tasks', 'TasksListController');
 #apiResource('users', 'UserController');
 
