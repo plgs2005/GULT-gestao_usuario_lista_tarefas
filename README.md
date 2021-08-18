@@ -38,6 +38,9 @@ Para Criar o primeiro usuario ou os demais via CLI basta digitar o comando
 - [Artisan] (php artisan user:create)
 - [Email] o email das movimentações será disparado para o email cadastrado na CLI
 
+## Execução
+Após todas as instalações realizadas é só usar o comoando 
+npm rum dev ou npm run watch
 
 ## require: 
         "php": "^7.3|^8.0",
@@ -81,11 +84,11 @@ API com autenticação:
 ## apiResource('status', 'StatusController');
 ## apiResource('tasks', 'TasksListController');
 
-rotas do tipo resource carregam todas as funções basicas do CRUD (index, show, create, update, destroy)
+Rotas do tipo resource carregam todas as funções basicas do CRUD (index, show, create, update, destroy)
 
 ## Explicações sobre Tema:
 
-para realizar esse crud em VUE eu poderia ter utilizado diversos componentes framework como o laravel ui vue mas achei mais abrangente,
+Para realizar esse crud em VUE eu poderia ter utilizado diversos componentes framework como o laravel ui vue mas achei mais abrangente,
 mostrar a criação de forma manual dos componentes tendo uma pequena ajuda do framework Bootstrap, a intenção é mostrar um pouco 
 de todo o conhecimento e estudos que venho realizado 
 

@@ -2710,6 +2710,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -41611,7 +41612,11 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-3" }, [
-          _vm._v("\n          Olá seja bom vindo \n        ")
+          _c("p", [
+            _vm._v(
+              "Olá seja bem vindo, Ao CRUD Gestão de Usuários e Lista de Tarefas "
+            )
+          ])
         ])
       ])
     ])

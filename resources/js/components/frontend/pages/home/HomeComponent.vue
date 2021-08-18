@@ -5,7 +5,8 @@
         <div class="row">
 
             <div class="col-3">
-              Olá seja bem vindo, Ao CRUD Gestão de Usuários e Lista de Tarefas 
+              <p>Olá seja bem vindo, Ao CRUD Gestão de Usuários e Lista de Tarefas </p>
+              
             </div>
 
         </div>
