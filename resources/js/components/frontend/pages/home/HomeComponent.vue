@@ -5,7 +5,7 @@
         <div class="row">
 
             <div class="col-3">
-              Olá seja bom vindo 
+              Olá seja bem vindo, Ao CRUD Gestão de Usuários e Lista de Tarefas 
             </div>
 
         </div>
