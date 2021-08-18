@@ -81,14 +81,26 @@ API com autenticação:
     ou seja localhost.com/api/v1/*endpointex
 
 ## Endpoint's
-#Route::post('auth', 'App\Http\Controllers\Api\v1\AuthController@authenticate');
-#Route::post('auth-refresh', 'App\Http\Controllers\Api\v1\AuthController@refreshToken');
-#Route::get('user', 'App\Http\Controllers\Api\v1\AuthController@getAuthenticatedUser');
 
-#get('status/{id}/tasks', 'StatusController@tasks');
-#apiResource('status', 'StatusController'); 
-#apiResource('tasks', 'TasksListController');
-#apiResource('users', 'UserController');
+'##Autenticações:'
+
+'#Route::post('auth', 'App\Http\Controllers\Api\v1\AuthController@authenticate');'
+
+'#Route::post('auth-refresh', 'App\Http\Controllers\Api\v1\AuthController@refreshToken');'
+
+'#Route::get('user', 'App\Http\Controllers\Api\v1\AuthController@getAuthenticatedUser');'
+
+//Tarefas com Status X
+'#get('status/{id}/tasks', 'StatusController@tasks');'
+
+//Status da tarefa
+'#apiResource('status', 'StatusController');' 
+
+//Tarefas
+'#apiResource('tasks', 'TasksListController');'
+
+//Usuários
+'#apiResource('users', 'UserController');'
 
 Rotas do tipo resource carregam todas as funções basicas do CRUD (index, show, create, update, destroy)
 
