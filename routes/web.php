@@ -1,6 +1,7 @@
 <?php
 
 use App\Mail\newEmailGult;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,13 @@ Route::get('/', function () {
 });
 
 
+Route::get('/envio-email', function(){
+    
+  $user = new stdClass();    
+    $user->name = 'Pedro Lucas';
+    $user->email = 'plgsantos@icloud.com';
+
+  /*   return new newEmailGult($user); */
+ 
+  Mail::send($user);
+});
