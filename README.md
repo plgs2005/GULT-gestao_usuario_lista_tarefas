@@ -29,7 +29,7 @@ Se você não quiser ler, [Laracasts] (https://laracasts.com) pode ajudar. Larac
 
 ## Começando
 
-Para executar o projeto, será necessário instalar os seguintes programas:
+Para executar o projeto, será necessário instalar:
 
 - [Laravel 8](https://laravel.com/docs/8.x/installation)
 - [JASON_WEB_TOKEN](https://github.com/tymondesigns/jwt-auth)
