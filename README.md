@@ -86,7 +86,7 @@ rotas do tipo resource carregam todas as funções basicas do CRUD (index, show,
 ## Explicações sobre Tema:
 
 para realizar esse crud em VUE eu poderia ter utilizado diversos componentes framework como o laravel ui vue mas achei mais abrangente,
-mostrar a criação de forma manual dos componentes tendo uma pequena ajuda do framework Bootstrap, a intenção éra mostrar um pouco 
+mostrar a criação de forma manual dos componentes tendo uma pequena ajuda do framework Bootstrap, a intenção é mostrar um pouco 
 de todo o conhecimento e estudos que venho realizado 
 
 Pedro Lucas 
